@@ -177,6 +177,8 @@ class mortgages:
           if subsity != 0:
             try:
               subsity_t.append(kwargs['subsity_time'])
+              if subsity_t[-1] > 24:
+                raise ValueError('要在貸款後2年內申請自購住宅利息補貼') 
             except KeyError:
               raise KeyError('請輸入住宅利息補貼時間[subsity_time]')
             try:
