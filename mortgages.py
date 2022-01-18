@@ -8,6 +8,9 @@ from bs4 import BeautifulSoup
 from io import StringIO
 import numpy as np
 from ipywidgets import *
+
+#-----------------------------------------------------------------
+
 class mortgages:
   
   def __init__(self):
